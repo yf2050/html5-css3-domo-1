@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #太极-wrapper {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        body {
+            background: #eee;
+        }
+
+        @keyframes xx {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #太极 {
+            box-shadow: 0 0 0 1;
+            animation: xx 2s linear infinite;
+            height: 400px;
+            width: 400px;
+            border-radius: 200px;
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        @media (max-width:500px) {
+            #太极 {
+                height: 200px;
+                width: 200px;
+                border-radius: 100px;
+                position: relative;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+
+        }
+
+        #太极>div:first-child {
+            width: 50%;
+            height: 400px;
+            position: absolute;
+            left: 0;
+            box-sizing: border-box;
+            background: white;
+        }
+
+        @media(max-width:500px) {
+            #太极>div:first-child {
+                height: 200px;
+            }
+        }
+
+        #太极>div:nth-child(2) {
+            width: 50%;
+            height: 400px;
+            position: absolute;
+            right: 0;
+            box-sizing: border-box;
+            background: black;
+        }
+
+        @media(max-width:500px) {
+            #太极>div:nth-child(2) {
+                height: 200px;
+            }
+        }
+
+        #太极>div:nth-child(3) {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            left: 100px;
+            background: black;
+            border-radius: 100px;
+        }
+
+        @media(max-width:500px) {
+            #太极>div:nth-child(3) {
+                height: 100px;
+                width: 100px;
+                left: 50px;
+                border-radius: 50px;
+            }
+        }
+
+        #太极>div:nth-child(4) {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            left: 100px;
+            top: 200px;
+            background: white;
+            border-radius: 100px;
+        }
+
+        @media(max-width:500px) {
+            #太极>div:nth-child(4) {
+                height: 100px;
+                width: 100px;
+                left: 50px;
+                top: 100px;
+                border-radius: 50px;
+            }
+        }
+
+        #太极>div:nth-child(5) {
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: 175px;
+            top: 75px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        @media(max-width:500px) {
+            #太极>div:nth-child(5) {
+                height: 25px;
+                width: 25px;
+                left: 87.5px;
+                top: 37.5px;
+            }
+        }
+
+        #太极>div:nth-child(6) {
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: 175px;
+            top: 275px;
+            background: black;
+            border-radius: 50%;
+        }
+
+        @media(max-width:500px) {
+            #太极>div:nth-child(6) {
+                height: 25px;
+                width: 25px;
+                left: 87.5px;
+                top: 137.5px;
+            }
+        }
+
+        #太极-wrapper>div:last-child {
+            margin-top: 2em;
+            font-size: 50px;
+
+        }
+
+        @media(max-width:500px) {
+            #太极-wrapper>div:last-child {
+                margin-top: 1em;
+                font-size: 25px;
+
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="太极-wrapper">
+        <div id="太极">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+        <div>太极八卦阵ok</div>
+    </div>
+</body>
+
+</html>
